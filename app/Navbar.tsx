@@ -16,16 +16,16 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex h-16 relative"> {/* Eliminado justify-between */}
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-blue-600">
-              MiLogo
+              posible foto
             </Link>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Desktop Menu - Centered */}
+          <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             {menuItems.map((item) => (
               <Link
                 key={item.text}
@@ -37,8 +37,8 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile Menu Button - Moved to the right */}
+          <div className="md:hidden ml-auto flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none"
