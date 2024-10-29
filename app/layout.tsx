@@ -7,8 +7,8 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mi Aplicación",
-  description: "Descripción de mi aplicación",
+  title: "web Guille",
+  description: "web Guille",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
                 <h3 className="text-lg font-semibold mb-4">Enlaces Personales</h3>
                 <ul className="space-y-2">
                   <li><Link href="/" className="hover:text-gray-300">Inicio</Link></li>
-                  <li><Link href="/about" className="hover:text-gray-300">Sobre Nosotros</Link></li>
+                  <li><Link href="/about" className="hover:text-gray-300">Sobre mi</Link></li>
                   <li><Link href="/contact" className="hover:text-gray-300">Contacto</Link></li>
                 </ul>
               </div>
@@ -42,7 +42,10 @@ export default function RootLayout({
                 <ul className="space-y-2">
                   <li>Email: guillermo.fernández.pérez2005@gmail.com</li>
                   <li>Teléfono: 687 254 841</li>
-                  <li>Dirección: Tu Dirección</li>
+                  <li>Dirección: Calle de la Constitución, 25
+                  Villanueva del Pardillo, Madrid
+                  CP: 28229
+                  </li>
                 </ul>
               </div>
 
