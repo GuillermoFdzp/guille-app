@@ -1,5 +1,5 @@
 
-export default function page(){
+export default function Contacto(){
     return (
       <div className="py-8 max-w-md mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-center">Contacto</h1>

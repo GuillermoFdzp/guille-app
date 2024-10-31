@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";  // Correct import for Inter font
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -31,9 +31,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`flex flex-col min-h-screen ${inter.className} ${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
-        {children}
+        
+        {/* Contenedor principal */}
+        <main className="flex-grow">
+          {children}
+        </main>
+        
         <Footer />
       </body>
     </html>

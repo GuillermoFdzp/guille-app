@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Inicio() {
   return (
     <div className="py-8">
       <h1 className="text-3xl font-bold">Sobre mí</h1>
