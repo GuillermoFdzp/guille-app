@@ -1,6 +1,45 @@
+# Página Personal - DAMD DWEC U02
+
+
+
+## Estructura de archivos
+```bash
+├── app/
+│   ├── components/
+│   │   └── Footer.tsx
+│   │   └── Navbar.tsx
+│   ├── contacto/
+│   │   └── page.tsx
+│   ├── Proyecto/
+│   │   └── page.tsx
+│   ├── fonts/
+│   │   └── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── favicon.ico
+│   ├── global.css
+│   ├── page.tsx
+│   └── layout.tsx
+├── node_modules/
+├── public/
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── .eslintrc.json
+├── .gitignore
+├── next.config.js
+├── package.json
+├── README.md
+├── tailwind.config.js
+└── tsconfig.json
+```
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Ejecutarlo en Local
+
 
 First, run the development server:
 
